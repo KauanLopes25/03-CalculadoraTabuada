@@ -132,6 +132,20 @@ public class TelaTabuada {
 				
 			}
 		});
+		
+		buttonLimpar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textMultiplicando.setText(null);
+				textMinMultiplicador.setText(null);
+				textMaxMultiplicador.setText(null);
+				textMultiplicando.requestDefaultFocus();
+				
+				
+				listTabuada.setListData(new String[0]);
+			}
+		});
 
 		// tornando a tela visível
 		tela.setVisible(true);
